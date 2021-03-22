@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name = "myName"
+            type = "com.example.aboutme.MyName"/>
+
+    </data>
+
     <LinearLayout
         style="@style/name_style"
         android:layout_width="match_parent"
@@ -15,7 +22,7 @@
         <TextView
             android:id="@+id/name_text"
             style="@style/name_style"
-            android:text="@string/name" />
+            android:text="@={myName.name}" />
 
         <EditText
             android:id="@+id/nickname_edit"
@@ -38,7 +45,7 @@
             style="@style/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@={myName.nickname}"
             android:textAlignment="center"
             android:visibility="gone" />
 
