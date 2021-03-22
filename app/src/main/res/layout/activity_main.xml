@@ -1,67 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/name_style"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/layout_margin"
-    android:orientation="vertical"
-    android:padding="@dimen/layout_margin"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/name_text"
-        style="@style/name_style"
-        android:text="@string/name" />
-
-    <EditText
-        android:id="@+id/nickname_edit"
+    <LinearLayout
         style="@style/name_style"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/nickname_hint"
-        android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/done_botton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/done" />
-
-    <TextView
-        android:id="@+id/nickname_text"
-        style="@style/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:visibility="gone" />
-
-    <ImageView
-        android:id="@+id/star_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/yellow_star"
-        android:paddingTop="@dimen/layout_margin"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <ScrollView
-        android:id="@+id/bio_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_margin"
+        tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/bio_text"
+            android:id="@+id/name_text"
+            style="@style/name_style"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/nickname_edit"
+            style="@style/name_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nickname_hint"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/done_botton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/nickname_text"
             style="@style/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:lineSpacingExtra="14sp"
-            android:text="@string/bio" />
+            android:text="TextView"
+            android:textAlignment="center"
+            android:visibility="gone" />
 
-    </ScrollView>
+        <ImageView
+            android:id="@+id/star_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/yellow_star"
+            android:paddingTop="@dimen/layout_margin"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
 
-</LinearLayout>
+        <ScrollView
+            android:id="@+id/bio_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:lineSpacingExtra="14sp"
+                android:text="@string/bio" />
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
